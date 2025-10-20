@@ -4,42 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centro Turistico</title>
+    <title>Turismo San Miguel</title>
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-pnN+5rHbaTf9xo6MFQf7wX3iQrr5RzS3L4mB+Q5zY+I=" crossorigin="" />
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    
+        <style> 
+            #map { 
+                height: 600px; 
+                width: 800px;
+            }
+        </style>
+    
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
 </head>
 
 <body>
-    <h1>Contenidos a ver</h1>
-    <br>
-    <h2>Introduccion a HTML</h2>
-    <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" alt="Logo HTML" width="100">
-    <p>HTML (HyperText Markup Language) es el lenguaje de marcado estándar para crear páginas web. Fue creado por Tim
-        Berners-Lee en 1991 y ha evolucionado a lo largo de los años para incluir nuevas características y mejoras.</p>
-    <hr>
+    <h1>Turismo San Miguel</h1>
+    <img src="img/plaza1.jpg" alt="plaza1" width="600" height="400">
 
-    <h2>Introduccion a CSS</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="Logo CSS"
-        width="100">
-    <p>CSS (Cascading Style Sheets) es un lenguaje de estilo utilizado para describir la presentación de un documento
-        escrito en HTML. CSS permite a los desarrolladores separar el contenido de la presentación, lo que facilita la
-        creación de diseños web atractivos y responsivos.</p>
-    <hr>
-
-    <h2>Introduccion a JavaScript</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Logo JavaScript"
-        width="100">
-    <p>JavaScript es un lenguaje de programación de alto nivel, dinámico y de tipado débil. Es uno de los lenguajes de
-        programación más populares y se utiliza principalmente para crear contenido interactivo en páginas web.</p>
-
-
-    <div id="map" style="height: 180px;"></div>
+    <h2>Centros de asistencia San Miguel</h2>
+    <div id="map"></div>
+    
     <script>
-        var map = L.map('map').setView([51.505, -0.09], 13);
+        var map = L.map('map').setView([-34.543032, -58.711943], 13);
 
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
