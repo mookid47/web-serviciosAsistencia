@@ -4,20 +4,13 @@ Portal web de servicios de asistencia para la materia Ingeniería de Software de
 TO DO LIST:
 Cosas a implementar
 - ✅Mapa
-- ❌JSON con datos de los centros de asistencia
-- ❌Lectura automática de los JSON
+- ❌JS con datos de los centros de asistencia
+- ❌Lectura automática de los centros
 - ❌Mostrar los centros en buscador y en mapa como Marker *CU2*
 - ❌Evento que despliegue info del centro al seleccionar un marcador
 - ❌Evento que resalte en el mapa el centro seleccionado desde el buscador
-- ❌Que se vea lindo (carrusel de imagenes, colores, mas fotos,etc)
+- ❌Que se vea lindo (carrusel de imagenes, colores, mas fotos,etc) ESTO ES MEDIO OPCIONAL
 
-🤔Opcionales:
-- ❌Modo administrador *CU1*
-- ❌Formulario para la gestión de centros de asistencia *CU1*
-- ❌Que cada dia cambien los centros moviles (aleatorio?) *CU4*
-
-- ❌Notificar si falla la actualización *CU5*
-- ❌Reintento manual de actualización en el modo Admin *CU3*
-
+    
 
 
