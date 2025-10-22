@@ -1,6 +1,7 @@
 var map = crearMapa();
 var centros = [];
 
+//Reescribir para el js
 fetch('centrosDeAsistencia.json')
     .then(response => response.json()) // convierte la respuesta a formato JSON
     .then(data => {

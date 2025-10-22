@@ -6,7 +6,8 @@ function mainFunction(){
     // Cargamos el mapa y le agregamos un evento de click
     let map = document.getElementById("map");
     map.addEventListener("click", function(){
-        console.log("Mapa clickeado.");
+        
+        alert("Mapa clickeado.");
     });
 }
 
