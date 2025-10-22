@@ -1,10 +1,14 @@
 var map = crearMapa();
+var centros = [];
 
-//Se agrega un marcador y un evento al clickearlo
-var marker = L.marker([-34.543032, -58.711943]).addTo(map);
-marker.addEventListener('click', function() {
-    alert("Centro de Asistencia")
-});
+fetch('centrosDeAsistencia.json')
+    .then(response => response.json()) // convierte la respuesta a formato JSON
+    .then(data => {
+        centros = data;
+    })
+    .catch(error => console.error('Error al leer el JSON:', error));
+
+agregarMarcador();
 
 function crearMapa() {
     var map = L.map('map').setView([-34.543032, -58.711943], 13);
@@ -15,3 +19,10 @@ function crearMapa() {
     }).addTo(map);
     return map;
 }
+
+function agregarMarcador() {
+    for (let centro of centros) {
+        let marcador = L.marker([centro.coordenadas.latitud, centro.coordenadas.longitud]).addTo(map);;
+    }
+}
+
