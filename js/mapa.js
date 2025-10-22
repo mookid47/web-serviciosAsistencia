@@ -5,10 +5,10 @@ fetch('centrosDeAsistencia.json')
     .then(response => response.json()) // convierte la respuesta a formato JSON
     .then(data => {
         centros = data;
+        agregarMarcador();
     })
     .catch(error => console.error('Error al leer el JSON:', error));
 
-agregarMarcador();
 
 function crearMapa() {
     var map = L.map('map').setView([-34.543032, -58.711943], 13);
