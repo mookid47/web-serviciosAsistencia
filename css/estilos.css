@@ -202,6 +202,12 @@ input[type="text"]#searchCentro:focus {
   font-size: 1.05rem;
 }
 
+.card.resaltado-centro {
+  outline: 3px solid #00b6e3;
+  box-shadow: 0 0 0 6px #bde6f7, 0 16px 40px rgba(0,0,0,0.13);
+  transition: outline 0.2s, box-shadow 0.2s;
+}
+
 .footer {
   background: #0072bb;
   color: #fff;
