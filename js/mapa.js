@@ -1,10 +1,9 @@
 var map = crearMapa();
-let marcadores = []; // Tengo que ver si va
+var marcadores = []; // Marcadores leaflet asociados a los centros de asistencia
 
 agregarMarcadores();
 
-// Funciones
-
+// -- Funciones --
 function crearMapa() {
     var map = L.map('map').setView([-34.543032, -58.711943], 13);
 
@@ -19,17 +18,11 @@ function agregarMarcadores() {
     for (let centro of centrosAsistencia) {
         let marcador = L.marker([centro.coordenadas.latitud, centro.coordenadas.longitud])
             .addTo(map)
-            .on('click', () => {
-                // Mostrar información del centro al hacer clic (temporalmente con alert)
-                alert(
-                    `📍 ${centro.nombre}\n` +
-                    `🏠 Dirección: ${centro.direccion}\n` +
-                    `🕐 Horario: ${centro.horario}`
-                );
-            });
-        
-        // Guardar el marcador junto con el centro en el arreglo
-        marcadores.push(centro,marcador); // Tengo que ver si va
+        // Guardamos los marcadores y su centro asociado.
+        marcadores.push({
+            marcador: marcador,
+            centro: centro
+        });
     }
 }
 
