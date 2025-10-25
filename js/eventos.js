@@ -1,15 +1,16 @@
-function agregarEventos() {
-    // Cargamos el mapa y le agregamos un evento de click (ejemplo para agregar eventos)
-    let map = document.getElementById("map");
-    map.addEventListener("click", function () {
-
+function agregarEventos(map, marcadores) {
+    // Evento al hacer click en el contenedor del mapa (ejemplo)
+    let mapDiv = document.getElementById("map");
+    mapDiv.addEventListener("click", function () {
         console.log("Mapa clickeado.");
     });
 
     // Agregamos evento de click a cada marcador leaflet
     for (let elemento of marcadores) {
+        elemento.marcador.off && elemento.marcador.off("click");
         elemento.marcador.on("click", function () {
-            alert(`Hiciste clic en: ${elemento.centro.nombre}`);
+            // Mostrar información en sidebar o popup ya configurado
+            console.log(`Hiciste clic en: ${elemento.centro.nombre}`);
         });
     }
 }

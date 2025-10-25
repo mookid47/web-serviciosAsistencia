@@ -22,8 +22,29 @@
 
   <h2 class="encabezado">Centros de asistencia San Miguel</h2>
 
-  <div id="map"></div>
-  
+  <!-- Layout principal: mapa + sidebar -->
+  <div class="main-layout">
+    <div class="map-column">
+      <div id="map"></div>
+    </div>
+
+    <aside id="sidebar" class="sidebar">
+      <div class="controls">
+        <input id="searchCentro" type="text" placeholder="Buscar centro..." />
+        <div class="filters">
+          <button class="btn filter" data-filter="all">Todos</button>
+          <button class="btn filter" data-filter="fijo">Fijos</button>
+          <button class="btn filter" data-filter="móvil">Móviles</button>
+        </div>
+      </div>
+
+      <h3>Centros</h3>
+      <ul id="listaCentros" class="lista-centros">
+        <!-- Poblado dinámicamente desde JS -->
+      </ul>
+    </aside>
+  </div>
+
   <header class="header">
     <h1>Servicios de Asistencia</h1>
     <p>Descubrí los centros disponibles y puntos de ayuda más cercanos</p>
@@ -32,26 +53,59 @@
   <!-- Contenedor de tarjetas (habria que crear mas cards)-->
   <main class="grid-container">
     <article class="card">
-      <img src="img/centro1.jpg" alt="Centro de asistencia 1">
+      <img src="img/centro1.jpg" alt="Centro de Plaza">
       <div class="card-content">
-        <h2>Centro de Asistencia Norte</h2>
-        <p>Atención integral las 24hs con personal capacitado.</p>
+        <h2>Centro de Plaza</h2>
+        <p>Av. Dr. Ricardo Balbín 1200, B1663 San Miguel, Provincia de Buenos Aires<br>Horario: 9:00 - 18:00</p>
       </div>
     </article>
-
     <article class="card">
-      <img src="img/centro2.jpg" alt="Centro de asistencia 2">
+      <img src="img/centro1.jpg" alt="Centro movil">
       <div class="card-content">
-        <h2>Centro de Asistencia Sur</h2>
-        <p>Servicio especializado en emergencias y primeros auxilios.</p>
+        <h2>Centro movil</h2>
+        <p>no sé, es móvil<br>Horario: 10:00 - 16:00</p>
       </div>
     </article>
-
     <article class="card">
-      <img src="img/centro3.jpg" alt="Centro de asistencia 3">
+      <img src="img/centro1.jpg" alt="Centro en muñiz">
       <div class="card-content">
-        <h2>Centro de Apoyo Oeste</h2>
-        <p>Espacio de acompañamiento y asistencia rápida.</p>
+        <h2>Centro en muñiz</h2>
+        <p>Av. León Gallardo s/n, B1662 Muñiz, Provincia de Buenos Aires<br>Horario: 10:00 - 16:00</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="img/centro1.jpg" alt="Centro de Salud Bella Vista">
+      <div class="card-content">
+        <h2>Centro de Salud Bella Vista</h2>
+        <p>Av. Senador Morón 2500, Bella Vista<br>Horario: 8:00 - 20:00</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="img/centro1.jpg" alt="Centro de Atención San Miguel Oeste">
+      <div class="card-content">
+        <h2>Centro de Atención San Miguel Oeste</h2>
+        <p>Calle Primera Junta 1800, San Miguel<br>Horario: 9:00 - 17:00</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="img/centro1.jpg" alt="Móvil de Apoyo Plaza Mitre">
+      <div class="card-content">
+        <h2>Móvil de Apoyo Plaza Mitre</h2>
+        <p>Zona Plaza Mitre<br>Horario: 10:30 - 15:30</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="img/centro1.jpg" alt="Móvil de Apoyo Muñiz">
+      <div class="card-content">
+        <h2>Móvil de Apoyo Muñiz</h2>
+        <p>Zona Muñiz<br>Horario: 11:00 - 17:00</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="img/centro1.jpg" alt="Móvil de Apoyo Bella Vista">
+      <div class="card-content">
+        <h2>Móvil de Apoyo Bella Vista</h2>
+        <p>Zona Bella Vista<br>Horario: 9:30 - 14:30</p>
       </div>
     </article>
   </main>
