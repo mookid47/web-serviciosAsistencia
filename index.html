@@ -2,36 +2,38 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Turismo San Miguel</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Turismo San Miguel</title>
 
-    <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/estilos.css">
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-    <script src="js/main.js"></script>
+  <!-- Cargamos centros de asistencia-->
+  <script src="js/centrosDeAsistencia.js"></script>
+  <script src="js/eventos.js"></script>
 </head>
 
 <body>
-    <h1 class="encabezado">Turismo San Miguel</h1>
-    <img id="plaza1" src="img/plaza1.jpg" alt="plaza1" width="600" height="400">
+  <h1 class="encabezado">Turismo San Miguel</h1>
+  <img id="plaza1" src="img/plaza1.jpg" alt="plaza1" width="600" height="400">
 
-    <h2 class="encabezado">Centros de asistencia San Miguel</h2>
+  <h2 class="encabezado">Centros de asistencia San Miguel</h2>
 
-    <div id="map"></div>
+  <div id="map"></div>
 
-    <script src="js/mapa.js"></script>
-<header class="header">
+  <script src="js/mapa.js"></script>
+  <header class="header">
     <h1>Servicios de Asistencia</h1>
     <p>Descubrí los centros disponibles y puntos de ayuda más cercanos</p>
   </header>
 
-  <!-- Contenedor de tarjetas (habria que crear mas cards)--> 
+  <!-- Contenedor de tarjetas (habria que crear mas cards)-->
   <main class="grid-container">
     <article class="card">
       <img src="img/centro1.jpg" alt="Centro de asistencia 1">

@@ -1,15 +1,9 @@
 var map = crearMapa();
-var centros = [];
+let marcadores = []; // Tengo que ver si va
 
-//Reescribir para el js
-fetch('centrosDeAsistencia.json')
-    .then(response => response.json()) // convierte la respuesta a formato JSON
-    .then(data => {
-        centros = data;
-        agregarMarcador();
-    })
-    .catch(error => console.error('Error al leer el JSON:', error));
+agregarMarcadores();
 
+// Funciones
 
 function crearMapa() {
     var map = L.map('map').setView([-34.543032, -58.711943], 13);
@@ -21,9 +15,21 @@ function crearMapa() {
     return map;
 }
 
-function agregarMarcador() {
-    for (let centro of centros) {
-        let marcador = L.marker([centro.coordenadas.latitud, centro.coordenadas.longitud]).addTo(map);;
+function agregarMarcadores() {
+    for (let centro of centrosAsistencia) {
+        let marcador = L.marker([centro.coordenadas.latitud, centro.coordenadas.longitud])
+            .addTo(map)
+            .on('click', () => {
+                // Mostrar información del centro al hacer clic (temporalmente con alert)
+                alert(
+                    `📍 ${centro.nombre}\n` +
+                    `🏠 Dirección: ${centro.direccion}\n` +
+                    `🕐 Horario: ${centro.horario}`
+                );
+            });
+        
+        // Guardar el marcador junto con el centro en el arreglo
+        marcadores.push(centro,marcador); // Tengo que ver si va
     }
 }
 

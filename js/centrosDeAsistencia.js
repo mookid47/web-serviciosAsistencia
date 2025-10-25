@@ -1,33 +1,32 @@
-centrosAsistencia =
-    [
-        {
-            "nombre": "Centro de Plaza",
-            "tipo": "fijo",
-            "direccion": "Av. Dr. Ricardo Balbín 1200, B1663 San Miguel, Provincia de Buenos Aires",
-            "coordenadas": {
-                "latitud": -34.543032,
-                "longitud": -58.711943
-            },
-            "horario": "9:00 - 18:00"
+let centrosAsistencia = [
+    {
+        "nombre": "Centro de Plaza",
+        "tipo": "fijo",
+        "direccion": "Av. Dr. Ricardo Balbín 1200, B1663 San Miguel, Provincia de Buenos Aires",
+        "coordenadas": {
+            "latitud": -34.543032,
+            "longitud": -58.711943
         },
-        {
-            "nombre": "Centro movil",
-            "tipo": "móvil",
-            "direccion": "no sé, es móvil",
-            "coordenadas": {
-                "latitud": -34.545734,
-                "longitud": -58.704414
-            },
-            "horario": "10:00 - 16:00"
+        "horario": "9:00 - 18:00"
+    },
+    {
+        "nombre": "Centro movil",
+        "tipo": "móvil",
+        "direccion": "no sé, es móvil",
+        "coordenadas": {
+            "latitud": -34.545734,
+            "longitud": -58.704414
         },
-        {
-            "nombre": "Centro en muñiz",
-            "tipo": "fijo",
-            "direccion": "Av. León Gallardo s/n, B1662 Muñiz, Provincia de Buenos Aires",
-            "coordenadas": {
-                "latitud": -34.548434,
-                "longitud": -58.704614
-            },
-            "horario": "10:00 - 16:00"
-        }
-    ]
+        "horario": "10:00 - 16:00"
+    },
+    {
+        "nombre": "Centro en muñiz",
+        "tipo": "fijo",
+        "direccion": "Av. León Gallardo s/n, B1662 Muñiz, Provincia de Buenos Aires",
+        "coordenadas": {
+            "latitud": -34.548434,
+            "longitud": -58.704614
+        },
+        "horario": "10:00 - 16:00"
+    }
+];

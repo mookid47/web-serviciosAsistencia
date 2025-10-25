@@ -7,7 +7,13 @@ function mainFunction(){
     let map = document.getElementById("map");
     map.addEventListener("click", function(){
         
-        alert("Mapa clickeado.");
+        console.log("Mapa clickeado.");
+    });
+
+    let marcador = document.getElementById("marcador");
+    marcador.addEventListener("click", function(){
+        
+        alert("Marcador clickeado.");
     });
 }
 
