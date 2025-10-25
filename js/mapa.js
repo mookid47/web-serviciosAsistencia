@@ -1,9 +1,3 @@
-var map = crearMapa();
-var marcadores = []; // Marcadores leaflet asociados a los centros de asistencia
-
-agregarMarcadores();
-
-// -- Funciones --
 function crearMapa() {
     var map = L.map('map').setView([-34.543032, -58.711943], 13);
 
