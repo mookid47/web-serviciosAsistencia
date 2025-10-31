@@ -10,9 +10,9 @@ let centrosAsistencia = [
         "horario": "9:00 - 18:00"
     },
     {
-        "nombre": "Centro movil",
+        "nombre": "Móvil de apoyo Club Deportivo",
         "tipo": "móvil",
-        "direccion": "no sé, es móvil",
+        "direccion": "Maestro Ángel D'Elía 1360, B1663 San Miguel, Provincia de Buenos Aires",
         "coordenadas": {
             "latitud": -34.545734,
             "longitud": -58.704414
